@@ -1,3 +1,5 @@
 click
 psycopg2-binary
-getpass
+pandas
+fsspec
+s3fs
