@@ -208,7 +208,6 @@ def insert(db_host, db_port, db_name, db_user, copy_s3_path, copy_iam_role, nbr_
         ;
         """
 
-        print(sql)
         sql_time = _execute(conn=conn, sql=sql)
         toc = time()
         click.secho(f"Copy insert for {nbr_of_records} records: {round(toc - tic, 3)} of which {round(sql_time, 3)} in sql", bold=True)
